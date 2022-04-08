@@ -4,7 +4,7 @@ const close = document.querySelector('.close');
 const closeOption = document.querySelector('.mobile-menu-options');
 
 hamburger.addEventListener('click', () => {
-  dropdown.classList.remove('hide');
+  dropdown.classList.add('hide');
 });
 
 close.addEventListener('click', () => {
@@ -31,7 +31,7 @@ const projects = {
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     image: 'Art/popup-image.png',
     imageAlt: 'Popup project image',
-    linktolive: ['See Live', 'Art/Icon-Live.svg'],
+    linktolive: ['See Live', 'Art/Icon-Lives.svg'],
     linktosource: ['See Source', 'Art/Icon-Source.svg'],
   },
   project2: {
@@ -93,7 +93,7 @@ const bgBlur = document.querySelector('.works');
 const lockScroll = document.querySelector('.content');
 
 function displayProject1(event) {
-  popupProjectMobile.classList.remove('popup');
+  popupProjectMobile.classList.add('popup');
   bgBlur.classList.add('blur');
   lockScroll.classList.add('lockScroll');
 
